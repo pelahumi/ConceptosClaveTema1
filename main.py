@@ -27,9 +27,11 @@ if __name__ == "__main__":
 
     #Tercer punto
     print("Vector AB")
+    b = (5,5)
     print(a.vector(b))
 
     print("Vector BA")
+    a = (2,3) 
     print(b.vector(a))
 
     #Cuarto punto
