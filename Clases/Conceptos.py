@@ -1,14 +1,34 @@
 import math
 
 class Punto():
+
+    #Constuctor
     def __init__(self, x, y):
         self.x = x
         self.y = y
-    
+
+    #Getters
+    def get_x(self):
+        return self.x
+    def get_y(self):
+        return self.y
+
+    #Setters
+    def set_x(self, x, y):
+        if x == "":
+            self.x = 0
+        if y == "":
+            self.y = 0
+        else:
+            self.x = x
+            self.y = y
+
+    #Método string
     def string(self):
         pto = (self.x, self.y)
         return pto
-    
+
+    #Método cuadrante
     def cuadrante(self):
         if self.x > 0 and self.y > 0:
             print("Estás en el primer cuadrante.")
