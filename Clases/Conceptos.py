@@ -50,6 +50,18 @@ class Punto():
         
         else:
             print("Estás en el origen de coordenadas")
+
+    #Método vector
+    def vector(self, pto):
+        a = (self.x - pto[0])
+        b = (self.y - pto[1])
+        pto2 = (a, b)
+        return pto2
+
+
+punto = Punto(5,8)
+print(punto.vector((3,1)))
+
     
         
     
