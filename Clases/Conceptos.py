@@ -5,6 +5,10 @@ class Punto():
         self.x = x
         self.y = y
     
+    def string(self):
+        pto = (self.x, self.y)
+        return pto
+    
     def cuadrante(self):
         if self.x > 0 and self.y > 0:
             print("Estás en el primer cuadrante.")
@@ -28,5 +32,4 @@ class Punto():
             print("Estás en el origen de coordenadas")
     
         
-
     
