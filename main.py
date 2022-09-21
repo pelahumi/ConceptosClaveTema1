@@ -52,4 +52,6 @@ if __name__ == "__main__":
     rectangulo = Rectangulo(a, b)
 
     #Séptimo punto
-    
+    print(rectangulo.base())
+    print(rectangulo.altura())
+    print(rectangulo.area())

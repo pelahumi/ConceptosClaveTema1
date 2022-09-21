@@ -70,8 +70,6 @@ class Punto():
 
         return distancia
 
-punto = Punto(5,8)
-print(punto.distancia((3,1)))
 
     
         
