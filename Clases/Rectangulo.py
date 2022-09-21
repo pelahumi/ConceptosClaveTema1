@@ -33,5 +33,12 @@ class Rectangulo():
 
         return base
     
-rectangulo = Rectangulo((2,8), (3,1))
-print(rectangulo.base())
+    #Método altura
+    def altura(self):
+        a1 = self.pto1
+        a2 = (self.pto1[0], self.pto2[1])
+        altura = a1, a2
+
+        return altura
+    
+    
