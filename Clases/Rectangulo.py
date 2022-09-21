@@ -24,3 +24,14 @@ class Rectangulo():
             pto2 = (0,0)
         else:
             self.pto2 = pto2
+    
+    #Método base
+    def base(self):
+        b1 = self.pto1
+        b2 = (self.pto2[0], self.pto1[1])
+        base = b1, b2
+
+        return base
+    
+rectangulo = Rectangulo((2,8), (3,1))
+print(rectangulo.base())
