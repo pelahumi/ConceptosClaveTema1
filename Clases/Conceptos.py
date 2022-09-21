@@ -1,3 +1,4 @@
+from cmath import sqrt
 import math
 
 class Punto():
@@ -58,9 +59,19 @@ class Punto():
         pto2 = (a, b)
         return pto2
 
+    #Método distancia
+    def distancia(self, pto):
+        vector = self.vector(pto)
+
+        a = vector[0]**2
+        b = vector[1]**2
+
+        distancia = sqrt(a + b)
+
+        return distancia
 
 punto = Punto(5,8)
-print(punto.vector((3,1)))
+print(punto.distancia((3,1)))
 
     
         
