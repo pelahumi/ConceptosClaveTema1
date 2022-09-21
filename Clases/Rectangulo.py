@@ -1,4 +1,4 @@
-from Punto import *
+import math
 
 class Rectangulo():
 
@@ -33,7 +33,7 @@ class Rectangulo():
         b2 = (self.pto2[0], self.pto1[1])
         base = b1, b2
 
-        return base
+        return b1, b2
     
     #Método altura
     def altura(self):
@@ -41,11 +41,11 @@ class Rectangulo():
         a2 = (self.pto1[0], self.pto2[1])
         altura = a1, a2
 
-        return altura
-    
-    ########
-    def distancia(self):
-        vector = (self.pto1[0]-self.pto2[0], self.pto1[1]-self.pto2[1])
+        return a1, a2
+
+    ####
+    def distancia(self, pto1):
+        vector = (self.pto1[0] - self.pto2[0], self.pto1[1] - self.pto2[1])
 
         a = vector[0]**2
         b = vector[1]**2
@@ -53,17 +53,17 @@ class Rectangulo():
         distancia = math.sqrt(a + b)
 
         return distancia
-    ########
+    ###
 
     #Método área
     def area(self):
         base = self.base()
-        distancia_base = base
+        distancia_base = self.distancia(base)
         altura = self.altura()
+        distancia_altura = self.distancia(altura)
 
-        area = base * altura
+        area = distancia_base * distancia_altura
         return area
 
 
-punto= Rectangulo((4,1), (5,8))
-print(punto.area())
+    
