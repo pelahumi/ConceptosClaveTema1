@@ -41,4 +41,11 @@ class Rectangulo():
 
         return altura
     
-    
+    #Método área
+    def area(self):
+        base = self.base()
+        altura = self.altura()
+
+        area = base * altura
+        return area
+        
