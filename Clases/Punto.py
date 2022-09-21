@@ -66,7 +66,7 @@ class Punto():
         a = vector[0]**2
         b = vector[1]**2
 
-        distancia = sqrt(a + b)
+        distancia = math.sqrt(a + b)
 
         return distancia
 
