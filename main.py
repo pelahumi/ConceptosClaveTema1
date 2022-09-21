@@ -30,6 +30,7 @@ if __name__ == "__main__":
     b = (5,5)
     print(a.vector(b))
 
+    b = Punto(5,5)
     print("Vector BA")
     a = (2,3) 
     print(b.vector(a))
